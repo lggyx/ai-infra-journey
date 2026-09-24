@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+# 数据集和大模型权重不入库（本地 LFS 或按需另放）
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+data/raw/
+wandb/
+.env
+*.log
