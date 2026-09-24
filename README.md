@@ -13,6 +13,7 @@
 | 写一篇笔记 | [notes/templates/](notes/templates/) |
 | 看项目立项目录 | [projects/](projects/) |
 | 看现在学到哪、下一步干嘛 | [progress/current.md](progress/current.md) |
+| 远程设备环境/同步怎么弄 | [REMOTE-SETUP.md](REMOTE-SETUP.md) |
 
 ## 学习原则
 
@@ -29,3 +30,9 @@
 
 - 提交信息格式：`<类型>: <简述>`，类型 `notes` / `code` / `docs` / `fix` / `chore`
 - 论文笔记和实验代码分开目录：`notes/` 与 `projects/`
+- 本仓库是**私有学习档案**，真实实验输出、代码结论可以提交；大文件和权重放 Spark 的 `~/work/`
+
+## 硬件架构
+
+- **本机（WSL 控制站）**：无 PyTorch/CUDA 环境（有 4GB RTX 3050 Ti 但不作为训练主力），负责仓库管理、笔记、路线规划
+- **NVIDIA DGX Spark（远程）**：实际干活的环境，通过 SSH 直连，详见 [REMOTE-SETUP.md](REMOTE-SETUP.md)
