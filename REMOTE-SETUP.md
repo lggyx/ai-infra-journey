@@ -62,8 +62,8 @@ ssh spark "hostname && nvidia-smi --query-gpu=name,memory.total --format=csv && 
 仓库里带 `scripts/bootstrap-remote.sh`，在 Spark 上跑：
 
 ```bash
-git clone https://github.com/lggyx/ai-infra-journey.git ~/ai-infra-journey
-cd ~/ai-infra-journey
+git clone https://github.com/lggyx/ai-infra-journey.git ~/work/ai-infra-journey
+cd ~/work/ai-infra-journey
 bash scripts/bootstrap-remote.sh
 ```
 
@@ -74,7 +74,7 @@ bash scripts/bootstrap-remote.sh
 ```bash
 # ① Spark 上干活
 ssh spark
-cd ~/ai-infra-journey
+cd ~/work/ai-infra-journey
 # ... 改代码、跑实验 ...
 git add -A && git commit -m "code: xxx"     # 只 commit，不 push
 

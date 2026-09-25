@@ -3,7 +3,7 @@
 #
 # 前置条件：
 #   1. 已在 ~/.ssh 配好到 Spark 的密钥
-#   2. 已在本仓库加好 remote:  git remote add spark ssh://<host>/~/ai-infra-journey
+#   2. 已在本仓库加好 remote:  git remote add spark ssh://<host>/~/work/ai-infra-journey
 #      （host 用 ~/.ssh/config 里的 Host 别名，如 spark）
 #
 # 用法：bash scripts/sync-from-remote.sh
@@ -34,7 +34,7 @@ fi
 
 if ! git remote get-url "$REMOTE" >/dev/null 2>&1; then
     echo "错误: 找不到 remote '$REMOTE'。先添加："
-    echo "  git remote add $REMOTE ssh://<host>/~/ai-infra-journey"
+    echo "  git remote add $REMOTE ssh://<host>/~/work/ai-infra-journey"
     exit 1
 fi
 

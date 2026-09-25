@@ -3,7 +3,7 @@
 # 幂等：可重复执行，已装的步骤会自动跳过或覆盖为相同状态
 #
 # 用法（在 Spark 上执行）：
-#   cd ~/ai-infra-journey && bash scripts/bootstrap-remote.sh
+#   cd ~/work/ai-infra-journey && bash scripts/bootstrap-remote.sh
 #
 # 设计原则：
 #   1. 不假设已装任何东西（除系统自带 python3/git）
